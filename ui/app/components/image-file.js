@@ -27,11 +27,6 @@ export default class ImageFile extends Component {
   width = 0;
   height = 0;
 
-  init() {
-    super.init(...arguments);
-    this.updateImageMeta = this.updateImageMeta.bind(this);
-  }
-
   @computed('src')
   get fileName() {
     if (!this.src) return undefined;
