@@ -9,7 +9,7 @@ import { task, timeout } from 'ember-concurrency';
 import { htmlSafe } from '@ember/template';
 import { macroCondition, isTesting } from '@embroider/macros';
 import { array } from '@ember/helper';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import { HdsIcon } from '@hashicorp/design-system-components/components';
 import ListAccordion from 'nomad-ui/components/list-accordion';
 import DasRecommendationCard from 'nomad-ui/components/das/recommendation-card';

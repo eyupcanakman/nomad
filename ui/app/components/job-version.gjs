@@ -7,7 +7,7 @@ import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { fn, hash } from '@ember/helper';
 import { on } from '@ember/modifier';
-import didUpdate from '@ember/render-modifiers/modifiers/did-update';
+import { didUpdate } from '@ember/render-modifiers';
 import { service } from '@ember/service';
 import { task } from 'ember-concurrency';
 import can from 'ember-can/helpers/can';

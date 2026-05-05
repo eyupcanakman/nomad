@@ -9,7 +9,7 @@ import { assert } from '@ember/debug';
 import { guidFor } from '@ember/object/internals';
 import { once } from '@ember/runloop';
 import { concat } from '@ember/helper';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import d3Shape from 'd3-shape';
 import formatPercentage from 'nomad-ui/helpers/format-percentage';
 import windowResize from 'nomad-ui/modifiers/window-resize';

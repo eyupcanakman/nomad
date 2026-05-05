@@ -5,7 +5,7 @@
 
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import windowResize from 'nomad-ui/modifiers/window-resize';
 import JobStatusAllocationStatusBlock from 'nomad-ui/components/job-status/allocation-status-block';
 import JobStatusIndividualAllocation from 'nomad-ui/components/job-status/individual-allocation';

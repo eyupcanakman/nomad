@@ -6,8 +6,7 @@
 import Component from '@glimmer/component';
 import { array } from '@ember/helper';
 import { tracked } from '@glimmer/tracking';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
-import didUpdate from '@ember/render-modifiers/modifiers/did-update';
+import { didInsert, didUpdate } from '@ember/render-modifiers';
 import { LinkTo } from '@ember/routing';
 import { on } from '@ember/modifier';
 import { service } from '@ember/service';

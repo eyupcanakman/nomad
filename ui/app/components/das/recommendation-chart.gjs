@@ -10,7 +10,7 @@ import { htmlSafe } from '@ember/template';
 import { get } from '@ember/object';
 import { fn, concat } from '@ember/helper';
 import { on } from '@ember/modifier';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import { HdsIcon } from '@hashicorp/design-system-components/components';
 import { eq } from 'ember-truth-helpers';
 import windowResize from 'nomad-ui/modifiers/window-resize';

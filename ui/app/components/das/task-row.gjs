@@ -7,7 +7,7 @@ import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { on } from '@ember/modifier';
 import { fn, concat } from '@ember/helper';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import { and, not } from 'ember-truth-helpers';
 import Toggle from 'nomad-ui/components/toggle';
 

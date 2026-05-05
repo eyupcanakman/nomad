@@ -14,11 +14,9 @@ import {
 import { on } from '@ember/modifier';
 import { fn } from '@ember/helper';
 import { eq, not, or } from 'ember-truth-helpers';
-
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
-
-import didUpdate from '@ember/render-modifiers/modifiers/did-update';
+import { didInsert, didUpdate } from '@ember/render-modifiers';
 import hdsTooltip from '@hashicorp/design-system-components/modifiers/hds-tooltip';
+
 import windowResize from 'nomad-ui/modifiers/window-resize';
 import formatScheduledBytes from 'nomad-ui/helpers/format-scheduled-bytes';
 import formatScheduledHertz from 'nomad-ui/helpers/format-scheduled-hertz';

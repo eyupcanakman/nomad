@@ -7,10 +7,7 @@ import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { next } from '@ember/runloop';
 import { minIndex, max } from 'd3-array';
-
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
-
-import didUpdate from '@ember/render-modifiers/modifiers/did-update';
+import { didInsert, didUpdate } from '@ember/render-modifiers';
 import windowResize from 'nomad-ui/modifiers/window-resize';
 
 export default class FlexMasonry extends Component {

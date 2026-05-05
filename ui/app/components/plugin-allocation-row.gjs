@@ -4,8 +4,7 @@
  */
 
 import { tracked } from '@glimmer/tracking';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
-import didUpdate from '@ember/render-modifiers/modifiers/did-update';
+import { didInsert, didUpdate } from '@ember/render-modifiers';
 import { LinkTo } from '@ember/routing';
 import { HdsIcon } from '@hashicorp/design-system-components/components';
 import momentFromNow from 'ember-moment/helpers/moment-from-now';

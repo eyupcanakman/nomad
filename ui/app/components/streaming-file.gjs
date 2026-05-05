@@ -7,8 +7,7 @@ import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { scheduleOnce, once } from '@ember/runloop';
 import { task } from 'ember-concurrency';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
-import didUpdate from '@ember/render-modifiers/modifiers/did-update';
+import { didInsert, didUpdate } from '@ember/render-modifiers';
 import windowResize from 'nomad-ui/modifiers/window-resize';
 
 const A_KEY = 65;

@@ -6,7 +6,7 @@
 import Component from '@glimmer/component';
 import { macroCondition, isTesting } from '@embroider/macros';
 import { capitalize } from '@ember/string';
-import didUpdate from '@ember/render-modifiers/modifiers/did-update';
+import { didUpdate } from '@ember/render-modifiers';
 import { LinkTo } from '@ember/routing';
 import { on } from '@ember/modifier';
 import { service } from '@ember/service';

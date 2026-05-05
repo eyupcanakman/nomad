@@ -5,7 +5,7 @@
 
 import { fn } from '@ember/helper';
 import { and } from 'ember-truth-helpers';
-import didUpdate from '@ember/render-modifiers/modifiers/did-update';
+import { didUpdate } from '@ember/render-modifiers';
 import onResize from 'ember-on-resize-modifier/modifiers/on-resize';
 import EvaluationSidebarEvaluationActor from 'nomad-ui/components/evaluation-sidebar/evaluation-actor';
 import ProvidersActorsRelationships from 'nomad-ui/components/providers/actors-relationships';

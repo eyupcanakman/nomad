@@ -9,8 +9,7 @@ import { debounce } from '@ember/runloop';
 import { guidFor } from '@ember/object/internals';
 import { on } from '@ember/modifier';
 import { HdsIcon } from '@hashicorp/design-system-components/components';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
-import didUpdate from '@ember/render-modifiers/modifiers/did-update';
+import { didInsert, didUpdate } from '@ember/render-modifiers';
 
 const ESC = 27;
 

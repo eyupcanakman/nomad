@@ -8,7 +8,7 @@ import { tracked } from '@glimmer/tracking';
 import { service } from '@ember/service';
 import { assert } from '@ember/debug';
 import { on } from '@ember/modifier';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import { HdsIcon } from '@hashicorp/design-system-components/components';
 import PowerSelect from 'ember-power-select/components/power-select';
 import StreamingFile from 'nomad-ui/components/streaming-file';

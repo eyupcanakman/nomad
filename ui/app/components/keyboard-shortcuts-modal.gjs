@@ -7,8 +7,7 @@ import Component from '@glimmer/component';
 import { array, fn } from '@ember/helper';
 import { on } from '@ember/modifier';
 import { service } from '@ember/service';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
-import willDestroy from '@ember/render-modifiers/modifiers/will-destroy';
+import { didInsert, willDestroy } from '@ember/render-modifiers';
 import onClickOutside from 'ember-click-outside/modifiers/on-click-outside';
 import { and, not, or } from 'ember-truth-helpers';
 import {

@@ -5,8 +5,7 @@
 
 import { fn } from '@ember/helper';
 import { on } from '@ember/modifier';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
-import willDestroy from '@ember/render-modifiers/modifiers/will-destroy';
+import { didInsert, willDestroy } from '@ember/render-modifiers';
 import { eq } from 'ember-truth-helpers';
 import ProvidersActorsRelationships from 'nomad-ui/components/providers/actors-relationships';
 import StatusCell from 'nomad-ui/components/status-cell';

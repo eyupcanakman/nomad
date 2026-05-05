@@ -8,7 +8,7 @@ import { fn } from '@ember/helper';
 import { on } from '@ember/modifier';
 import { LinkTo } from '@ember/routing';
 import { service } from '@ember/service';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import can from 'ember-can/helpers/can';
 import HamburgerMenu from 'nomad-ui/components/hamburger-menu';
 import NomadLogo from 'nomad-ui/components/nomad-logo';

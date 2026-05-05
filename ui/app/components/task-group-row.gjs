@@ -13,7 +13,7 @@ import { service } from '@ember/service';
 import { or } from 'ember-truth-helpers';
 import { HdsIcon } from '@hashicorp/design-system-components/components';
 import cannot from 'ember-can/helpers/cannot';
-import didUpdate from '@ember/render-modifiers/modifiers/did-update';
+import { didUpdate } from '@ember/render-modifiers';
 import AllocationStatusBar from 'nomad-ui/components/allocation-status-bar';
 import formatScheduledBytes from 'nomad-ui/helpers/format-scheduled-bytes';
 import formatScheduledHertz from 'nomad-ui/helpers/format-scheduled-hertz';

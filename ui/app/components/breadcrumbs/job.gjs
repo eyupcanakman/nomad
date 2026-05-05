@@ -6,7 +6,7 @@
 import { assert } from '@ember/debug';
 import { LinkTo } from '@ember/routing';
 
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import KeyboardShortcutModifier from 'nomad-ui/modifiers/keyboard-shortcut';
 import Trigger from 'nomad-ui/components/trigger';
 import BreadcrumbsTemplate from 'nomad-ui/components/breadcrumbs/default';

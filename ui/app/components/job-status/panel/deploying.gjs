@@ -10,7 +10,7 @@ import { task } from 'ember-concurrency';
 import can from 'ember-can/helpers/can';
 import { array } from '@ember/helper';
 import { on } from '@ember/modifier';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import {
   HdsAlert,
   HdsBadge,

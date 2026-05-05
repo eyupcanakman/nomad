@@ -5,7 +5,7 @@
 
 import Component from '@glimmer/component';
 import { FitAddon } from 'xterm-addon-fit';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import windowResize from 'nomad-ui/modifiers/window-resize';
 
 export default class ExecTerminal extends Component {

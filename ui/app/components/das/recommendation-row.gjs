@@ -5,7 +5,7 @@
 
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import formatMonthTs from 'nomad-ui/helpers/format-month-ts';
 import ResourcesDiffs from 'nomad-ui/utils/resources-diffs';
 

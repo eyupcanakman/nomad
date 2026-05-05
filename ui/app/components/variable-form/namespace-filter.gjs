@@ -7,7 +7,7 @@ import Component from '@glimmer/component';
 import { service } from '@ember/service';
 import { fn } from '@ember/helper';
 import { on } from '@ember/modifier';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import { eq } from 'ember-truth-helpers';
 import { HdsDropdown } from '@hashicorp/design-system-components/components';
 import Trigger from 'nomad-ui/components/trigger';

@@ -9,7 +9,7 @@ import { tracked } from '@glimmer/tracking';
 import { scheduleOnce } from '@ember/runloop';
 import { on } from '@ember/modifier';
 import { includes } from '@nullvoxpopuli/ember-composable-helpers';
-import didUpdate from '@ember/render-modifiers/modifiers/did-update';
+import { didUpdate } from '@ember/render-modifiers';
 import BasicDropdown from 'ember-basic-dropdown/components/basic-dropdown';
 
 const TAB = 9;

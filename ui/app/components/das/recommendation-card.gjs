@@ -9,7 +9,7 @@ import { tracked } from '@glimmer/tracking';
 import { htmlSafe } from '@ember/template';
 import { fn } from '@ember/helper';
 import { on } from '@ember/modifier';
-import didInsert from '@ember/render-modifiers/modifiers/did-insert';
+import { didInsert } from '@ember/render-modifiers';
 import { and, not, eq } from 'ember-truth-helpers';
 import { includes } from '@nullvoxpopuli/ember-composable-helpers';
 import { didCancel, task, timeout } from 'ember-concurrency';
