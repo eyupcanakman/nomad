@@ -6,8 +6,9 @@
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { hash } from '@ember/helper';
-import { didInsert, didUpdate } from '@ember/render-modifiers';
+import { guidFor } from '@ember/object/internals';
 import { schedule, next } from '@ember/runloop';
+import { didInsert, didUpdate } from '@ember/render-modifiers';
 import d3 from 'd3-selection';
 import d3Scale from 'd3-scale';
 import d3Axis from 'd3-axis';
@@ -20,7 +21,6 @@ import Tooltip from 'nomad-ui/components/chart-primitives/tooltip';
 import VAnnotations from 'nomad-ui/components/chart-primitives/v-annotations';
 import windowResize from 'nomad-ui/modifiers/window-resize';
 import styleString from 'nomad-ui/utils/properties/glimmer-style-string';
-import uniquely from 'nomad-ui/utils/properties/uniquely';
 
 const lerp = ([low, high], numPoints) => {
   const step = (high - low) / (numPoints - 1);
@@ -64,10 +64,15 @@ export default class LineChart extends Component {
   @tracked element = null;
   @tracked ready = false;
 
-  @uniquely('title') titleId;
-  @uniquely('desc') descriptionId;
-
   latestMouseX = 0;
+
+  get titleId() {
+    return `title-${guidFor(this)}`;
+  }
+
+  get descriptionId() {
+    return `desc-${guidFor(this)}`;
+  }
 
   get xProp() {
     return this.args.xProp || 'time';
