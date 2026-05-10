@@ -7,6 +7,7 @@ import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { service } from '@ember/service';
 import { didInsert } from '@ember/render-modifiers';
+import { and, not } from 'ember-truth-helpers';
 import Trigger from 'nomad-ui/components/trigger';
 import formatDuration from 'nomad-ui/utils/format-duration';
 
@@ -66,7 +67,7 @@ export default class JobStatusUpdateParams extends Component {
         <h4 class="title is-4">Update Params</h4>
         <code>
 
-          {{#if trigger.data.isSuccess}}
+          {{#if (and trigger.data.isSuccess (not trigger.data.isError))}}
             <ul>
               {{#each this.updateParamGroups as |group|}}
                 <li>

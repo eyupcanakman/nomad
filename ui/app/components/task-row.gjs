@@ -6,7 +6,7 @@
 import Component from '@glimmer/component';
 import { array, concat } from '@ember/helper';
 import { tracked } from '@glimmer/tracking';
-import { didUpdate } from '@ember/render-modifiers';
+import { didInsert, didUpdate } from '@ember/render-modifiers';
 import { LinkTo } from '@ember/routing';
 import { on } from '@ember/modifier';
 import { service } from '@ember/service';
@@ -89,6 +89,7 @@ export default class TaskRow extends Component {
       class="task-row is-interactive"
       data-test-task-row
       {{on "click" this.click}}
+      {{didInsert this.handleTaskChange}}
       {{didUpdate this.handleTaskChange @task.allocation}}
       ...attributes
     >
