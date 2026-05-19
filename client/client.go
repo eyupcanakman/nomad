@@ -3004,8 +3004,7 @@ func (c *Client) newAllocRunnerConfig(
 	}
 }
 
-// setupVaultClients creates the objects that periodically renew tokens and
-// secrets with vault.
+// setupVaultClients created vault clients for each configured cluster
 func (c *Client) setupVaultClients() error {
 
 	c.vaultClients = map[string]vaultclient.VaultClient{}
